@@ -8,14 +8,18 @@ print()
 
 checkVals = []
 
-while sum(checkVals) < amt:
+while sum(checkVals) < float(amt):
 
     nextVal = random.uniform(0, amt)
     nextVal = round(nextVal, 2)
 
     if nextVal + sum(checkVals) > amt:
+        print('Nope')
 
     else:
         checkVals.append(nextVal)
 
-print(check
+print(checkVals)
+print()
+print()
+print(len(checkVals))
