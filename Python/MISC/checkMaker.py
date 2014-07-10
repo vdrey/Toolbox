@@ -10,10 +10,10 @@ checkVals = []
 
 while sum(checkVals) < float(amt):
 
-    nextVal = random.uniform(0, amt)
+    nextVal = random.uniform(0, float(amt))
     nextVal = round(nextVal, 2)
 
-    if nextVal + sum(checkVals) > amt:
+    if nextVal + sum(checkVals) > float(amt):
         print('Nope')
 
     else:
