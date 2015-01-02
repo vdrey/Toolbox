@@ -6,8 +6,8 @@ import random
 import copy
 import sys
 
-BOARDWIDTH = 7
-BOARDHEIGHT = 6
+BOARDWIDTH = 12
+BOARDHEIGHT = 4
 
 def main():
     """
