@@ -1,9 +1,7 @@
 import socket
-from randLocalIP import randLocalIP
-
 
 def sendPkt(): 
-    UDP_IP= str(randLocalIP())
+    UDP_IP= "192.168.0.15"
     UDP_PORT= 5005
     MESSAGE= "Hello world! This a test!"
  
