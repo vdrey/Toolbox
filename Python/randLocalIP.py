@@ -17,4 +17,5 @@ def randLocalIP():
 
     IP = '.'.join(Ls)
 
-    return IP
+    return str(IP)
+
