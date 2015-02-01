@@ -4,18 +4,19 @@
 # IP address in form A.B.C.D
 import random
 
-def randOct(x,y):
+def randOct(x,y): # X and Y are the starting/ending integers of the range
+                  # default should be (1,256) for A & D and (0,256) for C & B 
+    x = int(x)
+    y = int(y)
     return str(random.randint(x,y)
 
 
 def globalIP():
-    A = str(192)
-    B = str(168)
-    C = str(0)
-
-    
-    D = random.randint(1,256)
-    D = str(D)
+               
+    A = str(randOct(1,256))
+    B = str(randOct(0,256))
+    C = str(randOct(0,256))
+    D = str(randOct(1,256))
 
     Ls = [A,B,C,D]
 
