@@ -1,8 +1,8 @@
 import socket
 
 def sendPkt(): 
-    UDP_IP= "192.168.0.254"
-    UDP_PORT= 5005
+    UDP_IP= "192.168.0.1"
+    UDP_PORT= 801
     MESSAGE= "Hello world! This a test!"
  
  
