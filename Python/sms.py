@@ -6,13 +6,13 @@ import requests
 def sendSMS(num, content):
     headers = {'User-Agent':'LOL'}
     url = 'http://textbelt.com/text'
-    payload = {"number":num, "message":content}
+    payload = {"number": num, "message": content}
     m = requests.post(url, data=payload, headers=headers)
     print(m.text)
     print()
     print(payload)
 
-sendSMS(7042925045, 'I wanted to test if the connection to the server is encryptable. Please let me know if you get this. It will be the last one today')
+sendSMS(7045552222, 'I wanted to test if the connection to the server is encryptable. Please let me know if you get this. It will be the last one today')
 
 """
 def send_text(numstring, message):
