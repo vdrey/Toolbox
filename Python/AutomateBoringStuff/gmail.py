@@ -14,7 +14,6 @@ def getCred():
 
 
 def sGmail(to, message):
-    # TODO: send an email
     if os.path.exists('./cred_store'):
         creds = shelve.open('cred_store')
         username = creds['user']
