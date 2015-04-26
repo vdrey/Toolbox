@@ -32,3 +32,4 @@ def sGmail(to, message):
     smtpObj.login(username, password)
     smtpObj.sendmail(username, to, message)
     smtpObj.quit()
+
