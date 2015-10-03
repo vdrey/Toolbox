@@ -30,6 +30,5 @@ def sGmail(to, message):
     smtpObj.ehlo()
     smtpObj.starttls()
     smtpObj.login(username, password)
-    smtpObj.sendmail(username, to, message)
+    smtpObj.sendmail(from_addr=username, to_addrs=to, msg=message)
     smtpObj.quit()
-
